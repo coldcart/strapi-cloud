@@ -1122,6 +1122,38 @@ export interface ApiProviderProvider extends Schema.SingleType {
   };
 }
 
+export interface ApiCampaign extends Schema.SingleType {
+  collectionName: 'campaign';
+  info: {
+    singularName: 'campaign';
+    pluralName: 'campaigns';
+    displayName: 'Campaigns';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    content: Attribute.Component<'shared.card'>;
+    SEO: Attribute.Component<'shared.seo'>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::campaign.campaign',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::campaign.campaign',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -1149,6 +1181,7 @@ declare module '@strapi/types' {
       'api::how-it-works.how-it-works': ApiHowItWorksHowItWorks;
       'api::pricing.pricing': ApiPricingPricing;
       'api::provider.provider': ApiProviderProvider;
+      'api::campaign.campaign': ApiCampaign;
     }
   }
 }
