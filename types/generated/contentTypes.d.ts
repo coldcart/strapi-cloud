@@ -1134,6 +1134,7 @@ export interface ApiCampaign extends Schema.SingleType {
     draftAndPublish: true;
   };
   attributes: {
+    header: Attribute.Component<'shared.heading'>;
     content: Attribute.Component<'shared.card'>;
     SEO: Attribute.Component<'shared.seo'>;
     createdAt: Attribute.DateTime;
