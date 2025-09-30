@@ -17,6 +17,11 @@
       "repeatable": false,
       "component": "shared.heading"
     },
+    "primaryCTA": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    },
     "content": {
       "type": "component",
       "repeatable": false,
