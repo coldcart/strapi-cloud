@@ -20,27 +20,27 @@
     "titleSection": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.heading"
+      "component": "shared.title"
     },
     "howItWorksSection": {
       "type": "component",
-      "repeatable": false,
-      "component": "shared.heading"
+      "repeatable": true,
+      "component": "shared.steps"
     },
     "whyUseSection": {
       "type": "component",
-      "repeatable": false,
-      "component": "shared.heading"
+      "repeatable": true,
+      "component": "shared.steps"
     },
     "resultsSection": {
       "type": "component",
-      "repeatable": false,
-      "component": "shared.heading"
+      "repeatable": true,
+      "component": "shared.steps"
     },
     "whatNextSection": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.heading"
+      "component": "shared.steps"
     }
   }
 }

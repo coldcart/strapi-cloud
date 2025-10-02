@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_shared_headers",
+  "info": {
+    "displayName": "Title Section",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "tagline": {
+      "type": "string"
+    },
+    "titletext": {
+      "type": "string"
+    },
+    "illustration": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
