@@ -1135,11 +1135,11 @@ export interface ApiCampaign extends Schema.SingleType {
   };
   attributes: {
     primaryCTA: Attribute.Component<'shared.link'>;
-    titleSection: Attribute.Component<'shared.heading'>;
-    howItWorksSection: Attribute.Component<'shared.heading'>;
-    whyUseSection: Attribute.Component<'shared.heading'>;
-    resultsSection: Attribute.Component<'shared.heading'>;
-    whatNextSection: Attribute.Component<'shared.heading'>;
+    titleSection: Attribute.Component<'shared.title'>;
+    howItWorksSection: Attribute.Component<'shared.steps'>;
+    whyUseSection: Attribute.Component<'shared.steps'>;
+    resultsSection: Attribute.Component<'shared.steps'>;
+    whatNextSection: Attribute.Component<'shared.steps'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
