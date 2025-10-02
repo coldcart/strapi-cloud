@@ -26,6 +26,21 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.heading"
+    },
+    "whyUseSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.heading"
+    },
+    "resultsSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.heading"
+    },
+    "whatNextSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.heading"
     }
   }
 }
